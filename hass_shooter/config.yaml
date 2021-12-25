@@ -1,0 +1,41 @@
+name: "HASS Shooter"
+version: "0.1.0"
+slug: "hass_shooter"
+description: >-
+  HASS Shooter is a Home Assistant screenshot capture web server suitable for
+  e-ink displays.
+url: "https://github.com/jroimartin/hass-shooter"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+ports:
+  8000/tcp: 8000
+options:
+  hass_base_url: "https://example.com"
+  hass_token: "ACCESS_TOKEN"
+  hass_pages:
+    - path: "/lovelace/default_view"
+      scale: 1
+  width: 480
+  height: 800
+  rotation: 0
+  listen_addr: ":8000"
+  refresh_time: 60
+  min_idle_time: 5
+  timeout: 60
+schema:
+  hass_base_url: url
+  hass_token: password
+  hass_pages:
+    - path: str
+      scale: float
+  width: int(1,)
+  height: int(1,)
+  rotation: int
+  listen_addr: str
+  refresh_time: int
+  min_idle_time: int
+  timeout: int
