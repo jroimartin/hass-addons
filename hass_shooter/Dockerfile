@@ -4,7 +4,7 @@ RUN apt-get update && \
 	apt-get --yes --no-install-recommends install chromium imagemagick && \
 	apt-get clean
 
-RUN go install github.com/jroimartin/hass-shooter@v0.2.0
+RUN go install github.com/jroimartin/hass-shooter@v0.2.1
 
 ENTRYPOINT ["/go/bin/hass-shooter"]
 CMD ["-c", "/data/options.json"]
