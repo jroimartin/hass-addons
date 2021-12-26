@@ -23,6 +23,7 @@ options:
   height: 800
   rotation: 0
   listen_addr: ":8000"
+  ignore_cert_errors: false
   refresh_time: 60
   min_idle_time: 5
   timeout: 60
@@ -36,6 +37,7 @@ schema:
   height: int(1,)
   rotation: int
   listen_addr: str
+  ignore_cert_errors: bool
   refresh_time: int
   min_idle_time: int
   timeout: int
