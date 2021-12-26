@@ -1,9 +1,9 @@
 name: "HASS Shooter"
-version: "0.1.0"
+version: "0.2.0"
 slug: "hass_shooter"
 description: >-
   HASS Shooter is a Home Assistant screenshot capture web server suitable for
-  e-ink displays.
+  e-ink displays
 url: "https://github.com/jroimartin/hass-shooter"
 arch:
   - armhf
